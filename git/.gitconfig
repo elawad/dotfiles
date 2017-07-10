@@ -1,0 +1,41 @@
+[user]
+	name = Aymen Elawad
+	#email =
+
+[includeIf "gitdir:code/"]
+	path = .gitconfig-work
+
+[includeIf "gitdir:code/_home/"]
+	path = .gitconfig-home
+
+[merge]
+	tool = p4merge
+[mergetool "p4merge"]
+	cmd = "p4merge.exe $BASE $LOCAL $REMOTE $MERGED"
+	trustExitCode = false
+[mergetool]
+	keepBackup = false
+	prompt = false
+
+[diff]
+	tool = p4merge
+[difftool "p4merge"]
+	cmd = "p4merge.exe $LOCAL $REMOTE"
+
+[core]
+	editor = "code --wait"
+	autocrlf = input
+
+#[filter "hawser"]
+#	clean = git hawser clean %f
+#	smudge = git hawser smudge %f
+#	required = true
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[color]
+	ui = always
