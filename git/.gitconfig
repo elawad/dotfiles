@@ -2,39 +2,46 @@
 	name = Aymen Elawad
 	#email =
 
-[includeIf "gitdir:code/"]
-	path = .gitconfig-work
+[includeIf "gitdir:~/code/"]
+	path = .gitconfig-local
 
-[includeIf "gitdir:code/_home/"]
-	path = .gitconfig-home
+[includeIf "gitdir:~/code/home/"]
+	path = .gitconfig-local-home
+
+[core]
+	editor = "atom --wait"
+	autocrlf = input
+	excludesfile = ~/.gitignore
+	ignorecase = false
+
 
 [merge]
 	tool = p4merge
+#	keepBackup = false
+
 [mergetool "p4merge"]
-	cmd = "p4merge.exe $BASE $LOCAL $REMOTE $MERGED"
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "\"$PWD/$BASE\"" "\"$PWD/$LOCAL\"" "\"$PWD/$REMOTE\"" "\"$PWD/$MERGED\""
+	keepTemporaries = false
 	trustExitCode = false
-[mergetool]
 	keepBackup = false
-	prompt = false
+#	prompt = false
+
+#[mergetool]
+#	keepBackup = false
+#	prompt = false
 
 [diff]
 	tool = p4merge
+#	prompt = false
+
 [difftool "p4merge"]
-	cmd = "p4merge.exe $LOCAL $REMOTE"
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "\"$LOCAL\"" "\"$REMOTE\""
 
-[core]
-	editor = "code --wait"
-	autocrlf = input
-
-#[filter "hawser"]
-#	clean = git hawser clean %f
-#	smudge = git hawser smudge %f
-#	required = true
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+#	process = git-lfs filter-process
 	required = true
 
 [color]
