@@ -1,12 +1,12 @@
 [user]
 	name = Aymen Elawad
-	#email =
+	email = elawad@users.noreply.github.com
 
 [includeIf "gitdir:~/code/"]
-	path = .gitconfig-local
+	path = .gitconfig.local
 
 [includeIf "gitdir:~/code/home/"]
-	path = .gitconfig-local-home
+	path = .gitconfig.local.home
 
 [core]
 	editor = "atom --wait"
