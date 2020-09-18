@@ -20,8 +20,8 @@ function get_pwd(){
 }
 
 PROMPT='
-%{$fg[white]%}$(get_pwd)
-$ret_status '
+%{$fg[white]%}$(get_pwd)%{$reset_color%}
+$ret_status'
 
 RPROMPT='%{${line_up}%}$(git_prompt_info)%{$reset_color%}%{${line_down}%}'
 

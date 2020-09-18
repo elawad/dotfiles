@@ -1,0 +1,81 @@
+"*":
+  core:
+    automaticallyUpdate: false
+    customFileTypes:
+      "source.ts": [
+        "ts"
+      ]
+      "source.yaml": [
+        "env"
+        "dockerignore"
+        "eslintignore"
+        "gitignore"
+        "sequelizerc"
+        "Dockerfile"
+      ]
+    ignoredNames: [
+      "node_modules"
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "package-lock.json"
+      "yarn.lock"
+    ]
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: []
+    projectHome: "/Users/aelawad/code"
+    restorePreviousWindowsOnStart: "always"
+    telemetryConsent: "limited"
+    themes: [
+      "atom-dark-ui"
+      "oceanic-next"
+    ]
+    useTreeSitterParsers: false
+  editor:
+    fontFamily: "Fira Code, Menlo, Consolas, DejaVu Sans Mono, monospace"
+    fontSize: 18
+    zoomFontWhenCtrlScrolling: false
+  hyperclick:
+    win32TriggerKeys: "altKey"
+  "js-hyperclick":
+    extensions: [
+      ".js"
+      ".jsx"
+    ]
+  "language-babel": {}
+  "linter-eslint": {}
+  "linter-flow":
+    executablePath: "./node_modules/.bin/flow"
+  "linter-ui-default":
+    panelHeight: 160
+  minimap:
+    plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
+  "minimap-git-diff":
+    useGutterDecoration: true
+  "one-dark-ui": {}
+  "prettier-atom":
+    formatOnSaveOptions:
+      isDisabledIfNoConfigFile: true
+      isDisabledIfNotInPackageJson: true
+      showInStatusBar: true
+    prettierEslintOptions: {}
+    useEslint: true
+  react:
+    enabledForAllJavascriptFiles: true
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false

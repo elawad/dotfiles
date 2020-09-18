@@ -1,20 +1,2 @@
-# Git credentials
-.gitconfig.local*
-
-# Folder view configurations
-.DS_Store
-Desktop.ini
-
-# Thumbnail cache
-._*
-*~
-Thumbs.db
-
-# Package
-bower_components
-node_modules
-npm-debug.log
-
-# IDEs
-.idea
-.vscode
+# Git credential templates (update email)
+!.gitconfig.local*
