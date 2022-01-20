@@ -47,3 +47,6 @@
 
 [color]
 	ui = always
+
+[credential]
+	helper = osxkeychain

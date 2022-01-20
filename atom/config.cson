@@ -1,17 +1,20 @@
 "*":
+  "autocomplete-modules":
+    babelPluginModuleResolver: true
   core:
     automaticallyUpdate: false
     customFileTypes:
-      "source.ts": [
-        "ts"
+      "source.js.jsx": [
+        "js"
+        "jsx"
+        "sequelizerc"
       ]
       "source.yaml": [
-        "env"
+        "Dockerfile"
         "dockerignore"
+        "env"
         "eslintignore"
         "gitignore"
-        "sequelizerc"
-        "Dockerfile"
       ]
     ignoredNames: [
       "node_modules"
@@ -34,11 +37,12 @@
       "atom-dark-ui"
       "oceanic-next"
     ]
-    useTreeSitterParsers: false
   editor:
     fontFamily: "Fira Code, Menlo, Consolas, DejaVu Sans Mono, monospace"
     fontSize: 18
     zoomFontWhenCtrlScrolling: false
+  "file-types":
+    ".env*": "source.yaml"
   hyperclick:
     win32TriggerKeys: "altKey"
   "js-hyperclick":
@@ -47,7 +51,9 @@
       ".jsx"
     ]
   "language-babel": {}
-  "linter-eslint": {}
+  "linter-eslint":
+    autofix:
+      fixOnSave: true
   "linter-flow":
     executablePath: "./node_modules/.bin/flow"
   "linter-ui-default":
@@ -67,6 +73,7 @@
   "one-dark-ui": {}
   "prettier-atom":
     formatOnSaveOptions:
+      enabled: true
       isDisabledIfNoConfigFile: true
       isDisabledIfNotInPackageJson: true
       showInStatusBar: true

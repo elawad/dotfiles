@@ -14,7 +14,10 @@ alias gs="git status"
 alias gp="git pull origin"
 alias gc="git checkout"
 
-# export PATH="/usr/local/opt/node@8/bin:$PATH" # (not available)
-export PATH="/usr/local/opt/node@10/bin:$PATH"
+# export PATH="/usr/local/opt/node@10/bin:$PATH"
 # export PATH="/usr/local/opt/node@12/bin:$PATH"
-# export PATH="/usr/local/opt/node/bin:$PATH" # (current v14)
+export PATH="/usr/local/opt/node@14/bin:$PATH"
+# export PATH="/usr/local/opt/node@16/bin:$PATH"
+# export PATH="/usr/local/opt/node/bin:$PATH" # (current v17)
+
+# export PATH="/usr/local/opt/python/libexec/bin:$PATH"
