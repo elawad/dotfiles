@@ -1,7 +1,5 @@
-Delete-Whitelines@0.6.4
 autocomplete-modules@2.3.0
 busy-signal@2.0.1
-dark-flat-ui@1.2.4
 editorconfig@2.6.1
 file-icons@2.1.47
 file-types@1.0.1
@@ -10,18 +8,15 @@ hyperclick@0.1.5
 intentions@2.1.1
 js-hyperclick@1.14.2
 language-babel@2.85.0
-language-jenkinsfile@0.1.1
 last-cursor-position@1.2.0
 linter@3.4.0
 linter-eslint@8.6.6
-linter-flow@5.6.1
 linter-ui-default@3.4.1
 minimap@4.40.0
 minimap-find-and-replace@5.0.9
 minimap-git-diff@4.3.6
 minimap-highlight-selected@4.6.6
 minimap-linter@2.2.2
-native-ui@0.27.0
 nice-index@1.0.5
 oceanic-next@1.0.0
 operator-mono@0.11.0

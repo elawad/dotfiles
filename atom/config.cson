@@ -29,7 +29,6 @@
       "yarn.lock"
     ]
     openEmptyEditorOnStart: false
-    packagesWithKeymapsDisabled: []
     projectHome: "/Users/aelawad/code"
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "limited"
@@ -40,7 +39,7 @@
   editor:
     fontFamily: "Fira Code, Menlo, Consolas, DejaVu Sans Mono, monospace"
     fontSize: 18
-    zoomFontWhenCtrlScrolling: false
+    # zoomFontWhenCtrlScrolling: false
   "file-types":
     ".env*": "source.yaml"
   hyperclick:
@@ -50,14 +49,9 @@
       ".js"
       ".jsx"
     ]
-  "language-babel": {}
   "linter-eslint":
     autofix:
       fixOnSave: true
-  "linter-flow":
-    executablePath: "./node_modules/.bin/flow"
-  "linter-ui-default":
-    panelHeight: 160
   minimap:
     plugins:
       "find-and-replace": true
@@ -70,7 +64,6 @@
       linterDecorationsZIndex: 0
   "minimap-git-diff":
     useGutterDecoration: true
-  "one-dark-ui": {}
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true
@@ -81,8 +74,7 @@
     useEslint: true
   react:
     enabledForAllJavascriptFiles: true
-  "tree-view": {}
   welcome:
     showOnStartup: false
-  whitespace:
-    ensureSingleTrailingNewline: false
+  # whitespace:
+  #   ensureSingleTrailingNewline: false
