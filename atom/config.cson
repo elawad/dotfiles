@@ -16,6 +16,9 @@
         "eslintignore"
         "gitignore"
       ]
+    disabledPackages: [
+      "whitespace"
+    ]
     ignoredNames: [
       "node_modules"
       ".git"
@@ -29,8 +32,7 @@
       "yarn.lock"
     ]
     openEmptyEditorOnStart: false
-    projectHome: "/Users/aelawad/code"
-    restorePreviousWindowsOnStart: "always"
+    projectHome: "~/code"
     telemetryConsent: "limited"
     themes: [
       "atom-dark-ui"
@@ -39,7 +41,6 @@
   editor:
     fontFamily: "Fira Code, Menlo, Consolas, DejaVu Sans Mono, monospace"
     fontSize: 18
-    # zoomFontWhenCtrlScrolling: false
   "file-types":
     ".env*": "source.yaml"
   hyperclick:
@@ -49,9 +50,6 @@
       ".js"
       ".jsx"
     ]
-  "linter-eslint":
-    autofix:
-      fixOnSave: true
   minimap:
     plugins:
       "find-and-replace": true
@@ -70,11 +68,8 @@
       isDisabledIfNoConfigFile: true
       isDisabledIfNotInPackageJson: true
       showInStatusBar: true
-    prettierEslintOptions: {}
     useEslint: true
   react:
     enabledForAllJavascriptFiles: true
   welcome:
     showOnStartup: false
-  # whitespace:
-  #   ensureSingleTrailingNewline: false

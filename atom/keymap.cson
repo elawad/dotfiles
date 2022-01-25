@@ -1,2 +1,2 @@
 'atom-workspace':
-  'cmd-m': 'minimap:toggle'
+  'cmd-shift-m': 'minimap:toggle'
