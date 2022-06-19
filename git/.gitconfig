@@ -1,52 +1,32 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
 [user]
 	name = Aymen Elawad
 	email = elawad@users.noreply.github.com
 
-[includeIf "gitdir:~/code/"]
-	path = .gitconfig.local
-
-[includeIf "gitdir:~/code/home/"]
-	path = .gitconfig.local.home
-
 [core]
-	editor = "atom --wait"
-	autocrlf = input
-	excludesfile = ~/.gitignore
-	ignorecase = false
+	editor = atom --wait
 
+[color]
+	ui = auto
+
+[credential]
+	helper = osxkeychain
 
 [merge]
 	tool = p4merge
-#	keepBackup = false
-
 [mergetool]
 	keepBackup = false
-#	prompt = false
-
 [mergetool "p4merge"]
 	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge \"$PWD/$BASE\" \"$PWD/$LOCAL\" \"$PWD/$REMOTE\" \"$PWD/$MERGED\"
 	keepTemporaries = false
 	trustExitCode = false
-# keepBackup = false
-#	prompt = false
 
 [diff]
 	tool = p4merge
-#	prompt = false
-
 [difftool "p4merge"]
 	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "\"$LOCAL\"" "\"$REMOTE\""
-
-
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-#	process = git-lfs filter-process
-	required = true
-	process = git-lfs filter-process
-
-[color]
-	ui = always
-
-[credential]
-	helper = osxkeychain

@@ -1,5 +1,4 @@
-ui=~/code/brandcentral-ui
-api=~/code/brandcentral-deliver
-dl=~/code/brandcentral-download
+ui=~/code/brand-center-ui
+api=~/code/brand-center-api
 
-#cd $ui
+# cd $ui

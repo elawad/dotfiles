@@ -1,4 +1,7 @@
 "*":
+  "atom-ide-ui":
+    use:
+      "atom-ide-diagnostics-ui": "never"
   "autocomplete-modules":
     babelPluginModuleResolver: true
   core:
@@ -16,11 +19,10 @@
         "eslintignore"
         "gitignore"
       ]
-    disabledPackages: [
-      "whitespace"
-    ]
+    # disabledPackages: ["whitespace"]
     ignoredNames: [
-      "node_modules"
+      "yarn.lock"
+      "package-lock.json"
       ".git"
       ".hg"
       ".svn"
@@ -28,8 +30,6 @@
       "._*"
       "Thumbs.db"
       "desktop.ini"
-      "package-lock.json"
-      "yarn.lock"
     ]
     openEmptyEditorOnStart: false
     projectHome: "~/code"
@@ -40,16 +40,17 @@
     ]
   editor:
     fontFamily: "Fira Code, Menlo, Consolas, DejaVu Sans Mono, monospace"
-    fontSize: 18
+    fontSize: 16
   "file-types":
     ".env*": "source.yaml"
-  hyperclick:
-    win32TriggerKeys: "altKey"
   "js-hyperclick":
     extensions: [
       ".js"
       ".jsx"
     ]
+  "linter-eslint-node":
+    autofix:
+      fixOnSave: true
   minimap:
     plugins:
       "find-and-replace": true
@@ -60,8 +61,6 @@
       "highlight-selectedDecorationsZIndex": 0
       linter: true
       linterDecorationsZIndex: 0
-  "minimap-git-diff":
-    useGutterDecoration: true
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true

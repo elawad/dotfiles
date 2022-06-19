@@ -1,56 +1,46 @@
-# Manual Steps:
-# > Install Fira Code font
-# > mkdir ~/.aws
-# > mkdir ~/.nvm
+#!/bin/sh
 
-#!/usr/bin/env bash
-## #!/bin/sh
-## #!/bin/bash
-
-# Save and `chmod +x ./brew-install.sh` Then `./brew-install.sh`
-
-echo "--> Homebrew"
-# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+echo "--- Homebrew ---"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# Adds brew PATH, if `brew install` fails below.
+echo "--- Add brew PATH ---"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+source ~/.zprofile
 
-# echo "Installing brew cask..."
-# brew tap homebrew/cask
 
-# Dev Tools
-echo "--> Dev Tools"
-brew install --cask github
-brew install --cask p4v
-brew insatll --cask postbird
-brew install git
-brew install awscli
-brew install docker
-brew install postgresql
-
-# Editor Tools
-echo "--> Editor Tools"
+echo "--- Editor Tools ---"
 brew install --cask atom
 brew install --cask iterm2
 brew install zsh
-echo "--> Oh My Zsh"
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+# Oh My Zsh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-# Web Tools
-echo "--> Web Tools"
+
+echo "--- Developer Tools ---"
+brew install gh
 brew install nvm
 brew install yarn
+brew install awscli
+brew install postgresql
+brew services restart postgresql # Auto startup
+brew install --cask github
+brew install --cask p4v
+brew install --cask postbird
+brew install --cask docker
+
+
+echo "--- Web Tools ---"
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask ngrok
 brew install --cask postman
 
-# Work Apps
-echo "--> Work Apps"
+
+echo "--- Work Tools ---"
+brew install --cask jump
+brew install --cask parallels
 brew install --cask slack
 brew install --cask webex
 brew install --cask microsoft-teams
 brew install --cask adobe-creative-cloud
-
-# Other
-# echo "--> Other Tools"
-# brew install ...
