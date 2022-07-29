@@ -1,7 +1,10 @@
 "*":
   "atom-ide-ui":
     use:
+      "atom-ide-code-format": "never"
       "atom-ide-diagnostics-ui": "never"
+      "atom-ide-refactor": "never"
+      "atom-ide-terminal": "never"
   "autocomplete-modules":
     babelPluginModuleResolver: true
   core:
@@ -19,7 +22,9 @@
         "eslintignore"
         "gitignore"
       ]
-    # disabledPackages: ["whitespace"]
+    disabledPackages: [
+      "whitespace"
+    ]
     ignoredNames: [
       "yarn.lock"
       "package-lock.json"
@@ -66,8 +71,6 @@
       enabled: true
       isDisabledIfNoConfigFile: true
       isDisabledIfNotInPackageJson: true
-      showInStatusBar: true
-    useEslint: true
   react:
     enabledForAllJavascriptFiles: true
   welcome:
