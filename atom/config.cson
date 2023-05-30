@@ -26,6 +26,7 @@
       "whitespace"
     ]
     ignoredNames: [
+      "node_modules"
       "yarn.lock"
       "package-lock.json"
       ".git"
@@ -45,7 +46,7 @@
     ]
   editor:
     fontFamily: "Fira Code, Menlo, Consolas, DejaVu Sans Mono, monospace"
-    fontSize: 16
+    fontSize: 17
   "file-types":
     ".env*": "source.yaml"
   "js-hyperclick":

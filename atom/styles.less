@@ -9,11 +9,12 @@ html, body, .tree-view, .tab-bar .tab {
 }
 
 // File Icons
-.medium-yellow:before { // js
+.medium-yellow:before { // mute yellow
   color: #a9885a;
 }
-.icon[data-name^='.nycrc.yml']:before { // nyc
-  color: #d28445;
+.icon[data-name$='.js']:before { // js as jsx bug
+  font-family: Mfizz;
+  content: '\f129';
 }
 
 /* Deprecation Warning:
