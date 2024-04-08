@@ -13,15 +13,7 @@ sh start.sh
 ```
 
 #### Manual Steps
-iTerm2:
-> Select Preferences > General > Preferences tab
->
-> Check *Load preferences*, and select `.plist` file from *dotfiles/zsh/*
->
-> Uncheck after loaded
-
-Node:
-```nvm install --lts```
+Node: ```nvm install --lts```
 
 GitHub: ```gh auth login```
 

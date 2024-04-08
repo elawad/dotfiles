@@ -1,6 +1,7 @@
 [user]
 	name = Aymen Elawad
 	email = elawad@users.noreply.github.com
+	signingKey = ~/.ssh/id_ed25519.pub
 
 [core]
 	editor = atom --wait
@@ -11,8 +12,17 @@
 [credential]
 	helper = osxkeychain
 
+[gpg]
+	format = ssh
+
+[commit]
+	gpgSign = true
+
+[includeIf "gitdir:~/code/home/"]
+	path = ~/code/home/.gitconfig
+	
 [pull]
-	rebase = false	
+	rebase = false
 
 [merge]
 	tool = p4merge
