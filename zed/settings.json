@@ -1,0 +1,35 @@
+// Docs: https://zed.dev/docs/configuring-zed
+// All : Zed menu -> Settings -> Open Default Settings
+{
+  // "format_on_save": "off",
+
+  "theme": "One Dark",
+  "base_keymap": "Atom",
+  "buffer_font_family": "Fira Code",
+  "buffer_font_size": 17,
+  // "ui_font_size": 17,
+
+  // (1) Biome:
+  "formatter": {
+    "language_server": { "name": "biome" }
+  },
+  "code_actions_on_format": {
+    "source.fixAll.biome": true,
+    "source.organizeImports.biome": true,
+    // Possible bug? Needed to sort imports on save.
+    "source.organizeImports": true
+  },
+
+  // (2) or ESLint:
+  // "code_actions_on_format": {
+  //   "source.fixAll.eslint": true
+  // },
+
+  // Turn off features:
+  "features": {
+    "copilot": false
+  },
+  "git": {
+    "inline_blame": { "enabled": false }
+  }
+}

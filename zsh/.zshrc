@@ -7,9 +7,8 @@ source $ZSH/oh-my-zsh.sh
 ## GitHub Commit Signature
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519 -q
 
-## NVM
-export NVM_DIR="$HOME/.nvm"
-source $(brew --prefix nvm)/nvm.sh
+## FNM
+eval "$(fnm env --use-on-cd --shell zsh)"
 
 ## Shortcuts
 alias cl="clear"
@@ -18,3 +17,7 @@ alias gs="git switch"
 alias gt="git status"
 
 alias ys="yarn start"
+
+# TODO - delete shortcuts ?
+# alias ui="cd ~/code/brand-center-ui"
+# alias api="cd ~/code/brand-center-api"

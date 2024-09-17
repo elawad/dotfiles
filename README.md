@@ -1,9 +1,10 @@
 # dotfiles
 > Dotfiles and setup for macOS.
 
-* Atom
 * Brew
 * Git
+* iTerm2
+* Zed
 * ZSH
 
 #### Start
@@ -13,7 +14,7 @@ sh start.sh
 ```
 
 #### Manual Steps
-Node: ```nvm install --lts```
+Node: ```fnm install --lts```
 
 GitHub: ```gh auth login```
 

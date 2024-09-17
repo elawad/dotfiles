@@ -10,7 +10,7 @@ source ~/.zprofile
 
 
 echo "--- Editor Tools ---"
-brew install --cask atom
+brew install --cask zed
 brew install --cask iterm2
 brew install zsh
 # Oh My Zsh
@@ -20,7 +20,8 @@ brew install zsh
 echo "--- Developer Packages ---"
 brew install gh
 brew install gnupg
-brew install nvm
+brew install ngrok/ngrok/ngrok
+brew install fnm
 brew install yarn
 brew install postgresql@14
 brew services start postgresql@14 # Auto startup
@@ -31,5 +32,4 @@ brew install --cask github
 brew install --cask p4v
 brew install --cask postbird
 brew install --cask docker
-brew install --cask ngrok
 brew install --cask postman
