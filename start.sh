@@ -6,18 +6,23 @@ sh brew/brew-install.sh
 
 echo "--- Create Directories ---"
 touch ~/.hushlogin
-mkdir -p ~/code
+mkdir -p ~/.aws
 mkdir -p ~/code/home
 # mkdir -p ~/.config/zed ( needed? )
 
 
 echo "--- Copy Dotfiles ---"
+cp aws/.okta_aws_login_config ~/.okta_aws_login_config
+cp aws/config ~/.aws/config
+cp aws/credentials ~/.aws/credentials
+
 cp git/ssh.config ~/.ssh/config
 cp git/.gitconfig ~/.gitconfig
 cp git/home.gitconfig ~/code/home/.gitconfig
 
 cp iterm2/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
 
+cp zed/.editorconfig ~/code/.editorconfig
 cp zed/biome.json ~/code/biome.json
 cp zed/settings.json ~/.config/zed/settings.json
 cp zed/snippets.json ~/.config/zed/snippets/snippets.json

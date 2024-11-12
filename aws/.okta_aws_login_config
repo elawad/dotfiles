@@ -1,0 +1,16 @@
+[DEFAULT]
+okta_username = { Email }
+aws_rolename = { User Role }
+
+okta_org_url = { Okta URL }
+app_url = { APP URL }
+
+aws_default_duration = 28800
+cred_profile = default
+enable_keychain = True
+gimme_creds_server = appurl
+output_format = export
+preferred_mfa_type = push
+remember_device = True
+resolve_aws_alias = True
+write_aws_creds = True

@@ -4,8 +4,8 @@ echo "--- Homebrew ---"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo "--- Add brew PATH ---"
-(echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> ~/.zprofile
-eval "$(/usr/local/bin/brew shellenv)"
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 source ~/.zprofile
 
 
@@ -23,6 +23,7 @@ brew install gnupg
 brew install ngrok/ngrok/ngrok
 brew install fnm
 brew install yarn
+brew install gimme-aws-creds
 brew install postgresql@14
 brew services start postgresql@14 # Auto startup
 
