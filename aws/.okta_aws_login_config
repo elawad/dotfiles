@@ -1,9 +1,9 @@
 [DEFAULT]
-okta_username = { Email }
-aws_rolename = { User Role }
+okta_username = {{ Email }}
+aws_rolename = {{ User Role }}
 
-okta_org_url = { Okta URL }
-app_url = { APP URL }
+okta_org_url = {{ Okta URL }}
+app_url = {{ APP URL }}
 
 aws_default_duration = 28800
 cred_profile = default

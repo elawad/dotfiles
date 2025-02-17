@@ -1,3 +1,3 @@
 [default]
-role_arn = { Assume Role }
+role_arn = {{ Assume Role }}
 source_profile = default
