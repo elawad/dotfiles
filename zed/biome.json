@@ -1,33 +1,20 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "formatter": {
-    "useEditorconfig": true,
-    "indentStyle": "space"
-  },
+  "formatter": { "useEditorconfig": true, "indentStyle": "space" },
   "javascript": {
-    "formatter": {
-      "quoteStyle": "single",
-      "trailingCommas": "es5"
-    }
+    "formatter": { "quoteStyle": "single", "trailingCommas": "es5" }
   },
   "linter": {
     "rules": {
       "correctness": {
         "noUndeclaredVariables": "error",
         "noUnusedVariables": "error",
-        "noUnusedImports": {
-          "fix": "none",
-          "level": "error"
-        }
+        "noUnusedImports": { "fix": "none", "level": "error" }
       },
       "suspicious": {
         "noConsoleLog": "error"
       }
     }
   },
-  "vcs": {
-    "enabled": true,
-    "clientKind": "git",
-    "useIgnoreFile": true
-  }
+  "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true }
 }

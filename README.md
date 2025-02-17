@@ -1,15 +1,10 @@
 # dotfiles
-> Dotfiles and setup for macOS.
 
-* Brew
-* Git
-* iTerm2
-* Zed
-* ZSH
+> Dotfiles and setup for macOS.\
+• Brew • Git • iTerm2 • Zed • ZSH
 
 #### Start
 ```
-cd dotfiles/
 sh start.sh
 ```
 

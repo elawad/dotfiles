@@ -2,26 +2,23 @@
   "theme": "One Dark",
   "base_keymap": "Atom",
   "buffer_font_family": "Fira Code",
-  "buffer_font_size": 17,
+  "buffer_font_size": 17.0,
 
-  "formatter": {
-    "language_server": { "name": "biome" }
-  },
+  "formatter": { "language_server": { "name": "biome" } },
   "code_actions_on_format": {
     "source.fixAll.biome": true,
     "source.organizeImports.biome": true
   },
 
   "auto_install_extensions": {
-    "html": true,
     "biome": true,
     "dockerfile": true,
     "git-firefly": true,
-    "xml": true
+    "html": true,
+    "xml": true,
+    "graphql": false
   },
 
   "features": { "copilot": false },
-  "git": {
-    "inline_blame": { "enabled": false }
-  }
+  "git": { "inline_blame": { "enabled": false } }
 }
