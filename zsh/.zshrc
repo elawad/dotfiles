@@ -1,6 +1,6 @@
 ## ZSH
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="custom__gitster"
+ZSH_THEME="custom-gitster"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
@@ -18,6 +18,5 @@ alias gt="git status"
 
 alias ys="yarn start"
 
-# TODO - delete shortcuts ?
-# alias ui="cd ~/code/brand-center-ui"
-# alias api="cd ~/code/brand-center-api"
+alias ui="cd ~/code/brand-center-ui"
+alias api="cd ~/code/brand-center-api"
