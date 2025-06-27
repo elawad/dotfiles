@@ -3,6 +3,7 @@
   "base_keymap": "Atom",
   "buffer_font_family": "Fira Code",
   "buffer_font_size": 17.0,
+  "snippet_sort_order": "top",
 
   "formatter": { "language_server": { "name": "biome" } },
   "code_actions_on_format": {
@@ -20,5 +21,6 @@
   },
 
   "features": { "copilot": false },
-  "git": { "inline_blame": { "enabled": false } }
+  "git": { "inline_blame": { "enabled": false } },
+  "jupyter": { "enabled": false }
 }

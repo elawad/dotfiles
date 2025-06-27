@@ -1,20 +1,20 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "formatter": { "useEditorconfig": true, "indentStyle": "space" },
-  "javascript": {
-    "formatter": { "quoteStyle": "single", "trailingCommas": "es5" }
-  },
+  "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
+  "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
   "linter": {
     "rules": {
       "correctness": {
         "noUndeclaredVariables": "error",
-        "noUnusedVariables": "error",
-        "noUnusedImports": { "fix": "none", "level": "error" }
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error"
       },
       "suspicious": {
-        "noConsoleLog": "error"
+        "noConsole": { "level": "error", "options": { "allow": ["error"] } }
       }
     }
   },
-  "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true }
+  "formatter": { "useEditorconfig": true },
+  "javascript": {
+    "formatter": { "quoteStyle": "single", "trailingCommas": "es5" }
+  }
 }
