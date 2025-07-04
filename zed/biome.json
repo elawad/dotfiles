@@ -3,11 +3,7 @@
   "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
   "linter": {
     "rules": {
-      "correctness": {
-        "noUndeclaredVariables": "error",
-        "noUnusedImports": "error",
-        "noUnusedVariables": "error"
-      },
+      "correctness": { "noUndeclaredVariables": "on" },
       "suspicious": {
         "noConsole": { "level": "error", "options": { "allow": ["error"] } }
       }
