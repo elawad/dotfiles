@@ -19,8 +19,7 @@ brew install zsh
 
 echo "--- Developer Packages ---"
 brew install gh
-brew install gnupg
-brew install ngrok/ngrok/ngrok
+brew install ngrok
 brew install fnm
 brew install yarn
 brew install gimme-aws-creds
@@ -34,3 +33,4 @@ brew install --cask p4v
 brew install --cask postbird
 brew install --cask docker
 brew install --cask postman
+brew install --cask font-fira-code
