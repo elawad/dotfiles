@@ -20,7 +20,9 @@
     "graphql": false
   },
 
-  "features": { "copilot": false },
-  "git": { "inline_blame": { "enabled": false } },
-  "jupyter": { "enabled": false }
+  "agent": { "enabled": false },
+  "git": { "inline_blame": { "enabled": false } }
+
+  // "format_on_save": "off"
+  // "lsp": { "biome": { "settings": { "require_config_file": true } } }
 }
