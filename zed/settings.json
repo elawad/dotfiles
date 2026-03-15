@@ -20,9 +20,6 @@
     "graphql": false
   },
 
-  "agent": { "enabled": false },
+  "disable_ai": true,
   "git": { "inline_blame": { "enabled": false } }
-
-  // "format_on_save": "off"
-  // "lsp": { "biome": { "settings": { "require_config_file": true } } }
 }
