@@ -1,6 +1,6 @@
 ## ZSH
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_DISABLE_COMPFIX=true
+export LESS="-RFX"
 ZSH_THEME="custom-gitster"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
@@ -21,3 +21,6 @@ alias ys="yarn start"
 
 alias ui="cd ~/code/brand-center-ui"
 alias api="cd ~/code/brand-center-api"
+
+# ZSH_DISABLE_COMPFIX=true
+# PROMPT_EOL_MARK=

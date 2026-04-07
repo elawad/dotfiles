@@ -19,7 +19,6 @@ brew install zsh
 
 echo "--- Developer Packages ---"
 brew install gh
-brew install ngrok
 brew install fnm
 brew install yarn
 brew install gimme-aws-creds
@@ -31,6 +30,7 @@ echo "--- Developer Casks ---"
 brew install --cask github
 brew install --cask p4v
 brew install --cask postbird
+brew install --cask tableplus
 brew install --cask docker
 brew install --cask postman
 brew install --cask font-fira-code

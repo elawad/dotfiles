@@ -8,7 +8,7 @@ echo "--- Create Directories ---"
 touch ~/.hushlogin
 mkdir -p ~/.aws
 mkdir -p ~/code/home
-# mkdir -p ~/.config/zed ( needed? )
+mkdir -p ~/.config/zed/snippets
 
 
 echo "--- Copy Dotfiles ---"
@@ -36,5 +36,6 @@ echo "--- GitHub SSH Key ---"
 ssh-keygen -t ed25519 -C "elawad@users.noreply.github.com"
 eval "$(ssh-agent -s)"
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+echo "elawad@users.noreply.github.com $(cat ~/.ssh/id_ed25519.pub)" >> ~/.ssh/allowed_signers
 pbcopy < ~/.ssh/id_ed25519.pub
 echo "--- Copied to clipboard. Add Signing Key to GitHub site ---"

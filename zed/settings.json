@@ -17,6 +17,7 @@
     "git-firefly": true,
     "html": true,
     "xml": true,
+    "sql": true,
     "graphql": false
   },
 
