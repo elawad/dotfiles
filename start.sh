@@ -7,8 +7,9 @@ sh brew/brew-install.sh
 echo "--- Create Directories ---"
 touch ~/.hushlogin
 mkdir -p ~/.aws
-mkdir -p ~/code/home
 mkdir -p ~/.config/zed/snippets
+mkdir -p ~/.ssh
+mkdir -p ~/code/home
 
 
 echo "--- Copy Dotfiles ---"
