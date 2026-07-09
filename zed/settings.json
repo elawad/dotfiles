@@ -4,6 +4,7 @@
   "buffer_font_family": "Fira Code",
   "buffer_font_size": 17.0,
 
+  "format_on_save": "on",
   "formatter": { "language_server": { "name": "biome" } },
   "code_actions_on_format": {
     "source.fixAll.biome": true,
@@ -21,6 +22,12 @@
   },
 
   "project_panel": { "dock": "left" },
-  "disable_ai": true,
-  "git": { "inline_blame": { "enabled": false } }
+  "git": { "inline_blame": { "enabled": false } },
+
+  // "disable_ai": true,
+  "agent": { "dock": "right", "sidebar_side": "right" },
+  "agent_servers": {
+    "cursor": { "type": "registry" },
+    "github-copilot-cli": { "type": "registry" }
+  }
 }

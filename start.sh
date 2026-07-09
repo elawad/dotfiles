@@ -29,7 +29,6 @@ cp zed/settings.json ~/.config/zed/settings.json
 cp zed/snippets.json ~/.config/zed/snippets/snippets.json
 
 cp zsh/.zshrc ~/.zshrc
-cp zsh/shortcuts.zsh ~/.oh-my-zsh/custom/shortcuts.zsh
 cp zsh/custom-gitster.zsh-theme ~/.oh-my-zsh/custom/themes/custom-gitster.zsh-theme
 
 

@@ -12,5 +12,26 @@
   "formatter": { "useEditorconfig": true },
   "javascript": {
     "formatter": { "quoteStyle": "single", "trailingCommas": "es5" }
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": {
+          "level": "on",
+          "options": {
+            "groups": [
+              ":NODE:",
+              ":BLANK_LINE:",
+              ":PACKAGE:",
+              ":BLANK_LINE:",
+              ":ALIAS:",
+              ":BLANK_LINE:",
+              "**",
+              ":BLANK_LINE:"
+            ]
+          }
+        }
+      }
+    }
   }
 }
