@@ -16,8 +16,8 @@
     "dockerfile": true,
     "git-firefly": true,
     "html": true,
-    "xml": true,
     "sql": true,
+    "xml": true,
     "graphql": false
   },
 

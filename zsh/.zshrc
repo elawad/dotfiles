@@ -19,6 +19,9 @@ alias gt="git status"
 
 alias ys="yarn start"
 
+alias osu="brew services run opensearch && brew services run opensearch-dashboards"
+alias osd="brew services stop opensearch && brew services stop opensearch-dashboards"
+
 alias ui="cd ~/code/brand-center-ui"
 alias api="cd ~/code/brand-center-api"
 

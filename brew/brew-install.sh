@@ -22,6 +22,8 @@ brew install gh
 brew install fnm
 brew install yarn
 brew install gimme-aws-creds
+brew install opensearch
+brew install opensearch-dashboards
 brew install postgresql@14
 brew services start postgresql@14 # Auto startup
 
