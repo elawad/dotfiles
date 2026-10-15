@@ -21,6 +21,7 @@ echo "--- Developer Packages ---"
 brew install gh
 brew install fnm
 brew install yarn
+brew install awscli
 brew install gimme-aws-creds
 brew install opensearch
 brew install opensearch-dashboards
@@ -36,3 +37,4 @@ brew install --cask tableplus
 brew install --cask docker
 brew install --cask postman
 brew install --cask font-fira-code
+brew install --cask session-manager-plugin
