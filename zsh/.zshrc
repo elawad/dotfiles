@@ -17,7 +17,8 @@ alias gp="git pull"
 alias gs="git switch"
 alias gt="git status"
 
-alias ys="yarn start"
+alias p="pnpm"
+alias ps="pnpm start"
 
 alias osu="brew services run opensearch && brew services run opensearch-dashboards"
 alias osd="brew services stop opensearch && brew services stop opensearch-dashboards"

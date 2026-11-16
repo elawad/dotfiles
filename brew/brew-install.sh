@@ -20,7 +20,7 @@ brew install zsh
 echo "--- Developer Packages ---"
 brew install gh
 brew install fnm
-brew install yarn
+brew install pnpm
 brew install awscli
 brew install gimme-aws-creds
 brew install opensearch
